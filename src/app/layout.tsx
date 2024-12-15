@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -49,6 +48,12 @@ export default function RootLayout({}: Readonly<{
               fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)"
             />
           </svg>
+
+          <div className="mx-auto max-w-7xl px-6 pv-24 pt-10 sm:pb-32 lg:flex gap-16 lg:px-8 lg:py-24">
+            <div className="h-full w-full flex flex-col items-center gap-4">
+              <h1 className="tracking-tight text-4xl font-light sm:text-6xl font-custom">JetSearch</h1>
+            </div>
+          </div>
         </div>
       </body>
     </html>
