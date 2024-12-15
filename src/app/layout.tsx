@@ -18,7 +18,6 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
@@ -27,7 +26,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+       <div className="relative min-h-screen isolate overflow-hidden border-b border-gray-200 bg-white">
+        
+       </div>
       </body>
     </html>
   );
