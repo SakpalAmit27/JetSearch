@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -60,6 +61,13 @@ body {
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+}
+
+@font-face{
+  font-family:'mainfont'; 
+  src:url('../../public/fonts/mainfont.otf') format('opentype');
+  
+  
 }
 
 @layer base {
