@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Icons } from "@/components/Icons";
+import SearchBar from "@/components/SearchBar";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -60,7 +61,7 @@ export default function RootLayout({children}: Readonly<{
               </p>
 
               <div className="mx-auto mt-16 w-full max-w-2xl flex flex-col">
-
+                <SearchBar/>
                 {children}
 
               </div>
